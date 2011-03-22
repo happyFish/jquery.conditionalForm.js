@@ -4,10 +4,7 @@ jQuery.fn.conditionalForm = function(options){
 	var defaultOptions = {
 		conditional : '.conditional',
 	};
-	
 	var options = $.extend(defaultOptions, options);
-	
-	console.log(options.conditional);
 	
 	$(options.conditional).hide();
 	
