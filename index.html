@@ -1,0 +1,31 @@
+<html>
+
+<form>
+		<label>Are you human?</label> <br/>
+		<input type="radio" name="human" id="humanYes" value="Yes">
+			<label for="humanYes">Yes</label><br/>
+		<input type="radio" name="human" id="humanNo" value="No">
+			<label for="humanNo">No</label>										
+			
+		<div class="conditional-field">
+			<label for="name">Enter Your Human Name</label>
+			<input type="text" id="name" />							
+		</div>
+		
+		
+		<p>
+			<input type="submit">Submit</input>						
+		</p>
+	</form>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script> 
+	
+	<script src="jquery.conditionalForm.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('form').conditionalForm({conditional:'.conditional-field'});
+		});
+	</script>
+
+</html>

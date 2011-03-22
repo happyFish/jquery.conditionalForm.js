@@ -7,6 +7,10 @@ jQuery.fn.conditionalForm = function(options){
 	
 	var options = $.extend(defaultOptions, options);
 	
+	console.log(options.conditional);
+	
+	$(options.conditional).hide();
+	
 	//Show/Hide Conditional questions when its parent is answered Yes/No
 	form.find('input').change(function(){
 		if($(this).siblings('.conditional')){
